@@ -1,0 +1,50 @@
+$min-wrapper: 319px;
+$max-wrapper: 1160px;
+
+$size-padding: 20px;
+$min-size-padding: 10px;
+
+$breakpoints: (
+  xxs: 320,
+  xs: 375,
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xl: 1280,
+  xxl: 1440,
+  xxxl: 1600,
+  fhd: 1920
+);
+
+$xxs: map-get($breakpoints, xxs);
+$xs: map-get($breakpoints, xs);
+$sm: map-get($breakpoints, sm);
+$smd: map-get($breakpoints, smd);
+$md: map-get($breakpoints, md);
+$lg: map-get($breakpoints, lg);
+$xl: map-get($breakpoints, xl);
+$xxl: map-get($breakpoints, xxl);
+$fhd: map-get($breakpoints, fhd);
+
+//----------- COLORS -------------
+$white: #fff;
+$black: #000;
+$background-section: #fcfcfc;
+$dark-grey: #252525;
+$dark-grey-hover: #545454;
+$grey-light: #e1e1e1;
+$background: #edeef0;
+$grey: #747474;
+$grey2: #e6e6e6;
+$navyBlue: #114c9a;
+$darkTeal: #012b34;
+$black2: #000402;
+//------------- FONTS ------------
+
+$font: verdana, arial, sans-serif;
+$font-title: "arial black", "britannic bold", "impact";
+$font-code: consolas, monospace;
+$font-quote: sans-serif, arial, verdana;
+
+$font-size: 16;
+//-------------------------------

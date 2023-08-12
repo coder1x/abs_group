@@ -10,7 +10,16 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
-    "sourceMap": true,
+    "sourceMap": false,
+    "allowJs": false,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "isolatedModules": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "noEmit": false,
+    "noImplicitAny": true,
     "baseUrl": ".",
     "types": [
       "webpack-env"
