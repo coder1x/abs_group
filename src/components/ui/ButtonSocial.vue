@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" class="button-social" :class="[classGolden, classGray]" :aria-label="name">
+  <a :href="link" class="button-social" :class="[classGolden, classGray]" :aria-label="name" target="_blank" rel="noopener noreferrer">
     <TelegramIcon v-if="name === 'telegram'"/>
     <WhatsApp v-if="name === 'whats-app'"/>
     <FbIcon v-if="name === 'fb'"/>
@@ -59,6 +59,7 @@ export default {
     width: 24px;
     height: 24px;
     fill: $white;
+    transition: fill 0.5s;
   }
 
   &_golden {
@@ -69,6 +70,12 @@ export default {
     padding: 14px;
     background-color: #ACADA5;
     border-radius: 16px;
+  }
+
+  @include hover() {
+    svg {
+      fill: $dark-grey;
+    }
   }
 }
 </style>

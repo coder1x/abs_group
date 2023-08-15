@@ -347,11 +347,19 @@ export default {
 
     &-link {
       position: relative;
+      &::after {
+        content: '';
+        opacity: 0;
+      }
+
       @include media-breakpoint-up('xl') {
         @include hover() {
           color: $golden;
-
+          transition: color 0.3s;
           &::after {
+            opacity: 1;
+            transition: opacity 0.8s;
+            will-change: transition;
             position: absolute;
             bottom: -21px;
             height: 2px;

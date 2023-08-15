@@ -6,13 +6,14 @@
       <slot/>
     </main>
   </div>
-  <common-footer/>
+  <common-footer :copyright="copyright" :social="social"/>
 </template>
 
 <script lang="ts">
 import CommonFooter from '@/components/common/Footer.vue';
 import CommonHeader from '@/components/common/Header.vue';
 import headerData from '@/assets/data/headerData.json';
+import footerData from '@/assets/data/footerData.json';
 
 export default {
   components: {
@@ -27,6 +28,8 @@ export default {
       headerSocial: headerData.social,
       headerTelephone: headerData.telephone,
       headerButtonModal: headerData.buttonModal,
+      copyright: footerData.copyright,
+      social: footerData.social
     };
   },
 };

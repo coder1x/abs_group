@@ -1,0 +1,20 @@
+{
+  "copyright": " Hotel Stavropol, 2020",
+  "social": {
+    "title": "Мы в соц. сетях",
+    "items": [
+      {
+        "name": "fb",
+        "link": "https://ru-ru.facebook.com/"
+      },
+      {
+        "name": "whats-app",
+        "link": "https://wa.me/"
+      },
+      {
+        "name": "vk",
+        "link": "https://vk.com"
+      }
+    ]
+  }
+}
