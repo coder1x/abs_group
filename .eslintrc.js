@@ -18,6 +18,7 @@ module.exports = {
     ],
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-empty-function': 'off',
+    'vuejs-accessibility/label-has-for': 'off',
     'vue/multi-word-component-names': 'off',
     'no-param-reassign': 'off',
     'no-useless-return': 'off',

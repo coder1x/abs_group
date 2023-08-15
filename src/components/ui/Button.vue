@@ -1,5 +1,5 @@
 <template>
-  <button class="button-action" v-if="!link">
+  <button class="button-action" v-if="!link" :type="type">
     {{ title }}
   </button>
   <a class="button-action" v-else :href="link">
@@ -14,6 +14,9 @@ export default {
     title: {
       type: String,
       required: true,
+    },
+    type: {
+      type: String,
     },
     link: {
       type: String,
@@ -31,11 +34,15 @@ export default {
   font-weight: 400;
   line-height: 133.333%;
   display: inline-flex;
-  padding: 8px 16px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 4px;
   background-color: $golden;
+  padding: 14px 32px;
+
+  @include media-breakpoint-down('xl') {
+    padding: 8px 16px;
+  }
 }
 </style>
