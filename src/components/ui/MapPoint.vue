@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .map-point {
   display: flex;
   flex-direction: row;

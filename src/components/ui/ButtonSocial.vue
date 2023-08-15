@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .button-social {
   padding: 12px;
   border-radius: 6px;

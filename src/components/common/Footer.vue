@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import LogoIcon from '@/assets/icons/footer/LogoIcon.vue';
+import LogoIcon from '@/assets/icons/header/LogoIcon.vue';
 import ButtonSocial from '@/components/ui/ButtonSocial.vue';
 
 export default {
@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .footer {
   width: 100%;
   font-size: #{$font-size}px;
@@ -67,6 +67,10 @@ export default {
 
     @include media-breakpoint-down('md') {
       padding-top: 40px;
+    }
+
+    & .logo-char{
+      fill: $white;
     }
   }
 

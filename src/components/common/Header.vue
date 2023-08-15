@@ -122,7 +122,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   box-sizing: border-box;
   width: 100%;
