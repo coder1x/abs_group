@@ -1,4 +1,4 @@
-$min-wrapper: 319px;
+$min-wrapper: 360px;
 $max-wrapper: 1160px;
 
 $size-padding: 20px;
@@ -29,22 +29,18 @@ $fhd: map-get($breakpoints, fhd);
 //----------- COLORS -------------
 $white: #fff;
 $black: #000;
-$background-section: #fcfcfc;
-$dark-grey: #252525;
-$dark-grey-hover: #545454;
+$grey-block: #F7F7F8;
+$dark-grey: #18191B;
 $grey-light: #e1e1e1;
-$background: #edeef0;
-$grey: #747474;
-$grey2: #e6e6e6;
-$navyBlue: #114c9a;
-$darkTeal: #012b34;
-$black2: #000402;
+$golden: #C6AF66;
+$grey: #424343;
+
+
 //------------- FONTS ------------
 
-$font: verdana, arial, sans-serif;
-$font-title: "arial black", "britannic bold", "impact";
-$font-code: consolas, monospace;
-$font-quote: sans-serif, arial, verdana;
+$font-lato: "lato", verdana, arial, sans-serif;
+$font-roboto: "roboto", verdana, arial, sans-serif;
+$font-title: "p052", "arial black", "britannic bold", "impact";
 
 $font-size: 16;
 //-------------------------------

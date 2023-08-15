@@ -10,7 +10,7 @@ html {
   height: 100%;
   font-weight: normal;
   font-size: #{$font-size}px;
-  font-family: $font;
+  font-family: $font-lato;
 
   @include media-breakpoint-down("xl") {
     font-size: 14px;
@@ -43,7 +43,7 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  color: $grey;
+  color: $dark-grey;
   text-rendering: optimizespeed;
 }
 

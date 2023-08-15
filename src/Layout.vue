@@ -1,9 +1,10 @@
 <template>
-  <common-header/>
+  <common-header :menu="headerMenu" :address="headerMapPoint" :social="headerSocial" :telephone="headerTelephone"
+                 :button-modal="headerButtonModal"/>
   <div class="page__wrapper">
-      <main class="content">
-        <slot/>
-      </main>
+    <main class="content">
+      <slot/>
+    </main>
   </div>
   <common-footer/>
 </template>
@@ -11,11 +12,22 @@
 <script lang="ts">
 import CommonFooter from '@/components/common/Footer.vue';
 import CommonHeader from '@/components/common/Header.vue';
+import headerData from '@/assets/data/headerData.json';
 
 export default {
   components: {
     CommonHeader,
     CommonFooter,
+  },
+
+  data() {
+    return {
+      headerMenu: headerData.menu,
+      headerMapPoint: headerData.mapPoint.address,
+      headerSocial: headerData.social,
+      headerTelephone: headerData.telephone,
+      headerButtonModal: headerData.buttonModal,
+    };
   },
 };
 </script>
@@ -24,6 +36,7 @@ export default {
 .content {
   display: flex;
   flex-direction: column;
+  @include sides-offset();
 }
 
 .page {

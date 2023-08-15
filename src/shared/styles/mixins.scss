@@ -20,8 +20,8 @@
 }
 
 @mixin sides-offset {
-  @include smooth-offset(padding-left, 24, 40, 107, 120, 160);
-  @include smooth-offset(padding-right, 24, 40, 107, 120, 160);
+  @include smooth-offset(padding-left, 0, 40, 107, 120, 166);
+  @include smooth-offset(padding-right, 0, 40, 107, 120, 166);
 }
 
 @mixin smooth-offset($property, $mobile, $tablet-768, $desktop-1280, $desktop-1440, $desktop-1920) {

@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['plugin:vue/vue3-essential', '@vue/airbnb', '@vue/typescript/recommended'],
+  extends: ['plugin:vue/vue3-essential', '@vue/airbnb', '@vue/typescript/recommended', 'prettier'],
   parserOptions: {
     ecmaVersion: 2020,
   },
@@ -24,6 +24,7 @@ module.exports = {
     'consistent-return': 'off',
     'no-var': 1,
     camelcase: 1,
+    'global-require': 'off',
     'no-nested-ternary': 1,
     'no-template-curly-in-string': 1,
     'no-self-compare': 1,
@@ -40,7 +41,13 @@ module.exports = {
         ignoreUrls: true,
         ignoreComments: true,
         ignoreRegExpLiterals: true,
-        code: 120,
+        code: 9999,
+      },
+    ],
+    'vue/max-len': [
+      'error',
+      {
+        code: 9999,
       },
     ],
   },

@@ -1,0 +1,65 @@
+{
+  "mapPoint": {
+    "address": "<span>г. Ставрополь,</span><span>ул. Пушкина 272</span>"
+  },
+  "social": [
+    {
+      "name": "telegram",
+      "link": "https://t.me/"
+    },
+    {
+      "name": "whats-app",
+      "link": "https://wa.me/"
+    }
+  ],
+  "telephone": {
+    "title": "+7 (123) 45-67-89",
+    "link": "tel:+7123456789"
+  },
+  "buttonModal": {
+    "title": "Перезвоните мне",
+    "modal": "formCall"
+  },
+  "menu": [
+    {
+      "id": 0,
+      "title": "Расчёт стоимости",
+      "link": "https://www.change-me"
+    },
+    {
+      "id": 1,
+      "title": "О нас",
+      "link": "https://www.change-me"
+    },
+    {
+      "id": 2,
+      "title": "Выездная регистрация",
+      "link": "https://www.change-me"
+    },
+    {
+      "id": 3,
+      "title": "Схемы залов",
+      "link": "https://www.change-me"
+    },
+    {
+      "id": 4,
+      "title": "Меню",
+      "link": "https://www.change-me"
+    },
+    {
+      "id": 5,
+      "title": "Галерея",
+      "link": "https://www.change-me"
+    },
+    {
+      "id": 6,
+      "title": "Отзывы",
+      "link": "https://www.change-me"
+    },
+    {
+      "id": 7,
+      "title": "Контакты",
+      "link": "https://www.change-me"
+    }
+  ]
+}

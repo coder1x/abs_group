@@ -1,4 +1,4 @@
 import Throttle from './Throttle';
+import isWindowSizeEqualToPoint from './isWindowSizeEqualToPoint';
 
-// eslint-disable-next-line import/prefer-default-export
-export { Throttle };
+export { Throttle, isWindowSizeEqualToPoint };
