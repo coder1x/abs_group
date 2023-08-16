@@ -90,10 +90,11 @@ export default {
     return {
       isMobile: !isWindowSizeEqualToPoint('xl'),
       isVisibleMenu: false,
+      throttle: null,
     };
   },
   mounted() {
-    new Throttle(this.handleResize);
+    this.throttle = new Throttle(this.handleResize);
 
     document.addEventListener('mousedown', this.handleClickOutside);
   },
@@ -117,6 +118,7 @@ export default {
     },
   },
   beforeUnmount() {
+    this.throttle.destructor();
     document.removeEventListener('mousedown', this.handleClickOutside);
   }
 };
@@ -138,6 +140,10 @@ export default {
 
   @include media-breakpoint-down('xl') {
     padding-top: 18px;
+  }
+
+  @include media-breakpoint-down('md') {
+    border-radius: 0;
   }
 
   &__wrapper {
@@ -224,13 +230,18 @@ export default {
     @include media-breakpoint-down('xl') {
       margin-bottom: 16px;
     }
+
+    @include media-breakpoint-down('md') {
+      margin-bottom: 11px;
+    }
+
   }
 
   &__social {
     display: flex;
     flex-direction: row;
     margin-left: 93px;
-    margin-right: 40px;
+    margin-right: 41px;
 
     @include media-breakpoint-down('xl') {
       display: none;
@@ -252,7 +263,11 @@ export default {
   &__contacts {
     display: flex;
     flex-direction: column;
-    margin-right: 9px;
+
+    @include media-breakpoint-down('xl') {
+      justify-content: center;
+      margin-right: 16px;
+    }
 
     &-link {
       color: $grey;
@@ -282,6 +297,12 @@ export default {
 
   &__logo {
     margin-right: auto;
+
+    @include media-breakpoint-down('md') {
+      svg{
+        width: 79px;
+      }
+    }
   }
 
   &__bottom {

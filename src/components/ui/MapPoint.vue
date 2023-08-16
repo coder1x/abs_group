@@ -31,6 +31,10 @@ export default {
   flex-direction: row;
   align-items: center;
 
+  svg{
+    margin-bottom: 8px;
+  }
+
   &__address {
     display: inline-flex;
     flex-direction: column;
@@ -41,6 +45,7 @@ export default {
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    margin-bottom: 10px;
   }
 }
 </style>

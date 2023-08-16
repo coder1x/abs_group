@@ -25,6 +25,11 @@ class Throttle {
     this.optimized();
   }
 
+  public destructor() {
+    this.objectThrottle.removeEventListener(this.action, this.handleThrottle);
+    window.removeEventListener(this.customEvent, this.handleOptimizedResize);
+  }
+
   private optimized() {
     this.timeout = false;
     this.throttle();

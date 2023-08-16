@@ -105,6 +105,7 @@ export default {
     z-index: -1;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     @include media-breakpoint-down('xl') {
       flex-direction: column;
@@ -113,10 +114,14 @@ export default {
       padding-right: 16px;
     }
 
+    @include media-breakpoint-down('md') {
+      padding-top: 16px;
+    }
+
     &_current {
       position: static;
       z-index: 1;
-      animation-name: tabs-animation;
+      animation-name: opacity-animation;
       animation-duration: 0.8s;
       animation-fill-mode: forwards;
     }
@@ -130,18 +135,14 @@ export default {
     @include media-breakpoint-down('xl') {
       margin-left: auto;
     }
+
+    @include media-breakpoint-down('md') {
+      width: 100%;
+      max-width: 118.414px;
+    }
   }
 
 }
 
-@keyframes tabs-animation {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
+@include opacity-animation();
 </style>

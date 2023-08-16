@@ -8,19 +8,19 @@
       </li>
     </ul>
     <div class="hall-details__wrapper-buttons">
-      <Button v-for="(button, index) in buttons" :key="index" :class="button.modal" :title="button.title"
+      <button-action v-for="(button, index) in buttons" :key="index" :class="button.modal" :title="button.title"
               :link="button.link"/>
     </div>
   </article>
 </template>
 
 <script>
-import Button from '@/components/ui/Button.vue';
+import ButtonAction from '@/components/ui/Button.vue';
 
 export default {
   name: 'hall-details',
   components: {
-    Button
+    ButtonAction,
   },
   props: {
     title: {
@@ -42,7 +42,7 @@ export default {
   flex-direction: column;
   height: fit-content;
   background-color: $white;
-  padding: 40px 40px 48px 40px;
+  padding: 36px 40px 48px 40px;
   border-radius: 16px;
   box-shadow: 0 8px 16px 0 rgba(34, 35, 36, 0.10);
   margin-left: 56px;
@@ -62,11 +62,17 @@ export default {
 
   &__title {
     color: $dark-grey;
-    font-size: 32px;
+    @include font-rem(32);
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
+
+    @include media-breakpoint-down('md') {
+      font-size: 20px;
+      line-height: 123%;
+      margin-bottom: 14px;
+    }
   }
 
   &__list {
@@ -82,6 +88,10 @@ export default {
     border-bottom: 2px solid $grey-light2;
     padding-top: 8px;
     padding-bottom: 8px;
+    @include media-breakpoint-down('md') {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
   }
 
   &__property {
@@ -93,6 +103,11 @@ export default {
     font-weight: 400;
     line-height: 175%;
     width: 44%;
+
+    @include media-breakpoint-down('md') {
+      font-size: 14px;
+      width: 47%;
+    }
   }
 
   &__value {
@@ -102,6 +117,10 @@ export default {
     font-style: normal;
     font-weight: 400;
     line-height: 175%;
+
+    @include media-breakpoint-down('md') {
+      font-size: 14px;
+    }
   }
 
   a.button-action {
@@ -117,11 +136,11 @@ export default {
   &__wrapper-buttons {
     display: flex;
     flex-direction: row;
-    padding-top: 19px;
+    padding-top: 25px;
 
     @include media-breakpoint-down('sm') {
       flex-direction: column;
-
+      padding-top: 18px;
       :first-child {
         margin-bottom: 16px;
       }
@@ -132,6 +151,14 @@ export default {
         margin-right: 16px;
       }
     }
+
+    .button-action {
+      @include media-breakpoint-down('sm') {
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+    }
   }
+
 }
 </style>

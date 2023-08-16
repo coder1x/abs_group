@@ -90,15 +90,16 @@ export default {
   grid-template-rows: repeat(3, auto);
   grid-template-columns: 1fr 1fr;
   position: absolute;
-  top: 18vh;
+  top: 50%;
   left: 50%;
   width: 100%;
   max-width: 842px;
   background-color: $white;
   box-shadow: 0 8px 16px 0 rgba(34, 35, 36, 0.10);
   border-radius: 16px;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   padding: 18px 10px 16px 40px;
+  z-index: 10;
 
   @include media-breakpoint-down('lg') {
     max-width: 600px;

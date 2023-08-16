@@ -100,3 +100,15 @@
   position: relative;
   padding: 5px 0 5px 10px;
 }
+
+@mixin opacity-animation {
+  @keyframes opacity-animation {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}

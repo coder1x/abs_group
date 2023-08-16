@@ -66,7 +66,7 @@ export default {
     grid-column: 1 / 2;
 
     @include media-breakpoint-down('md') {
-      padding-top: 40px;
+      padding-top: 41px;
     }
 
     & .logo-char{
@@ -94,7 +94,7 @@ export default {
   &__content-right {
     padding-top: 48px;
     padding-bottom: 44px;
-    padding-right: 58px;
+    padding-right: 53px;
     grid-row: 1 / 2;
     grid-column: 3 / 4;
 

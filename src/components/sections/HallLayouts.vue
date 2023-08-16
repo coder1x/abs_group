@@ -26,13 +26,13 @@ export default {
 
 <style lang="scss">
 .hall-layouts {
-  padding-top: 32px;
+  padding-top: 26px;
   padding-bottom: 32px;
 
   &__title {
     margin-bottom: 24px;
     color: $dark-grey;
-    font-size: 40px;
+    @include font-rem(40);
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
