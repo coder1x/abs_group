@@ -45,7 +45,7 @@
 }
 
 @mixin media-breakpoint-up($name) {
-  @media (min-width: #{map-get($breakpoints, $name)+1}px) {
+  @media (min-width: #{map-get($breakpoints, $name)}px) {
     @content;
   }
 }

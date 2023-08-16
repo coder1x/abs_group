@@ -25,9 +25,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .button-action {
   color: $white;
+  transition: color 0.5s;
   font-family: $font-roboto;
   font-size: 15px;
   font-style: normal;
@@ -40,6 +41,10 @@ export default {
   border-radius: 4px;
   background-color: $golden;
   padding: 14px 32px;
+
+  @include hover(){
+    color: $input-text;
+  }
 
   @include media-breakpoint-down('xl') {
     padding: 8px 16px;

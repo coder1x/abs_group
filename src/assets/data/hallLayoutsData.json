@@ -1,0 +1,67 @@
+{
+  "title": "Схемы залов",
+  "tabs": [
+    {
+      "title": "Зал Первый",
+      "container": {
+        "imageSrc": "planOfDistribution1",
+        "title": "Просторный зал с панорамным видом на город",
+        "properties": [
+          {
+            "property": "площадь",
+            "value": "160 кв. метров"
+          },
+          {
+            "property": "вместимость",
+            "value": "до 100 человек"
+          },
+          {
+            "property": "фуршет",
+            "value": "до 200 человек"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Забронировать",
+            "modal": "formCall"
+          },
+          {
+            "title": "Посмотреть галерею",
+            "link": "https://www.change-me"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Зал Второй",
+      "container": {
+        "imageSrc": "planOfDistribution2",
+        "title": "Просторный зал",
+        "properties": [
+          {
+            "property": "площадь",
+            "value": "120 кв. метров"
+          },
+          {
+            "property": "вместимость",
+            "value": "до 85 человек"
+          },
+          {
+            "property": "фуршет",
+            "value": "до 180 человек"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Забронировать",
+            "modal": "formCall"
+          },
+          {
+            "title": "Посмотреть галерею",
+            "link": "https://www.change-me"
+          }
+        ]
+      }
+    }
+  ]
+}

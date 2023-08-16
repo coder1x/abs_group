@@ -133,6 +133,8 @@ export default {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(16px);
   padding-top: 12px;
+  position: relative;
+  z-index: 9;
 
   @include media-breakpoint-down('xl') {
     padding-top: 18px;

@@ -6,7 +6,7 @@ $min-size-padding: 10px;
 
 $breakpoints: (
   xxs: 320,
-  xs: 375,
+  xs: 360,
   sm: 640,
   md: 768,
   lg: 1024,
@@ -29,14 +29,20 @@ $fhd: map-get($breakpoints, fhd);
 //----------- COLORS -------------
 $white: #fff;
 $black: #000;
-$grey-block: #F7F7F8;
+
 $dark-grey: #18191B;
-$grey-light: #e1e1e1;
-$golden: #C6AF66;
-$grey: #424343;
-$dark-grey2: #ACADA5;
-$grey-light2: #E9EAEC;
 $input-text: #27282A;
+$grey: #424343;
+$dark-grey1: #63636F;
+$dark-grey2: #ACADA5;
+$grey-light: #e1e1e1;
+$grey-block: #F7F7F8;
+$grey-light2: #E9EAEC;
+$golden: #C6AF66;
+
+
+
+
 
 //------------- FONTS ------------
 
