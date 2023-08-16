@@ -26,7 +26,6 @@
 import Button from '@/components/ui/Button.vue';
 import CloseIcon from '@/assets/icons/modalWindow/CloseIcon.vue';
 import InputField from '@/components/ui/InputField.vue';
-import { isWindowSizeEqualToPoint } from '@/shared/helpers';
 
 export default {
   name: 'modal-window',
